@@ -1,0 +1,16 @@
+gcc >=4.9
+cuda >= 9.0
+python >= 3.5
+nccl 2
+pytorch >= 1.1
+
+
+pip install addict
+pip install opencv-python==3.3.0.10
+pip install Cython
+pip install pycocotools
+pip install tensorboardX
+
+python modules/dcn/setup.py build
+python ops/nms/setup.py build
+python ops/roi_align/setup.py build
